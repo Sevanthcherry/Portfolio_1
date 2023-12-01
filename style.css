@@ -54,6 +54,7 @@ nav ul li a:hover{
     justify-content: space-around;
     margin: 80px 0;
     align-items: center;
+    margin:  0;
 }
 
 .firstSection > div{
@@ -67,8 +68,28 @@ nav ul li a:hover{
     margin: 50px 0;
 }
 
-.rightSection{
-    /* background-color: red; */
+.leftSection .buttons{
+    padding: 45px 0;
+}
+
+.buttons .btn:hover{
+    color: #1e2167;
+    background-color: white;
+}
+
+.leftSection .btn{
+    padding: 12px;
+    background: #1e2167;
+    color: white;
+    border: 2px solid white;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.rightSection img{
+    animation: imgg 2s ease-in-out infinite;
+    animation-delay: 2s;
 }
 
 .purple{
@@ -83,4 +104,59 @@ nav ul li a:hover{
 
 #element{
     color: rgb(170,107,220)
+}
+
+
+.share{
+    /* position: absolute; */
+    bottom: 3rem;
+    left: 15%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* margin-top: 100px; */
+    margin-top: 0;
+}
+
+.share p{
+    font-size: 17px;
+    color: var(--text-color);
+    margin-right: 25px;
+    margin-bottom: 10px;
+}
+
+.social i{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 45px;
+    /* background: linear-gradient(130.08deg, #383528 0%, #191919 100%); */
+    box-shadow: 0px 20px 40px #00000070;
+    /* border: 1px solid #3b3b3b; */
+    color: white;
+    font-size: 20px;
+    margin: 0 7px;
+    transition: all 0.3s ease-in-out;
+}
+
+.social i:hover{
+    /* border: 1px solid #3b3b3b; */
+    /* transition: 0.1s; */
+    font-size: 0.8rem;
+    background-color: lightgray;
+    color: #BC0EEF;
+}
+
+
+@keyframes imgg{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-22px);
+    }
+    100%{
+        transform: translateY(0);
+    }
 }
